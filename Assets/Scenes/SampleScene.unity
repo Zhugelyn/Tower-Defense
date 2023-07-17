@@ -1202,10 +1202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2369817d1ea6d974d91240fe71b27a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 857722720}
-  enemyPrefab: {fileID: 182862608747675236, guid: 1b6fcfe558612fa45a6aac9a6641d597, type: 3}
-  spawnInterval: 1
-  countEnemy: 10
+  _spawnPoint: {fileID: 857722720}
+  _enemyPrefab: {fileID: 182862608747675236, guid: 1b6fcfe558612fa45a6aac9a6641d597, type: 3}
+  _spawnInterval: 1
+  _countEnemy: 10
 --- !u!4 &857722720
 Transform:
   m_ObjectHideFlags: 0
@@ -1219,8 +1219,13 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &872874998 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6919268600108727293, guid: 716ad2a7c747dac45932b5341d5bb2e1, type: 3}
+  m_PrefabInstance: {fileID: 1234273859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &884059590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1517,10 @@ PrefabInstance:
       propertyPath: shootingRange
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 2957921338899173259, guid: 716ad2a7c747dac45932b5341d5bb2e1, type: 3}
+      propertyPath: _shootingPoint
+      value: 
+      objectReference: {fileID: 872874998}
     - target: {fileID: 3288219195230293482, guid: 716ad2a7c747dac45932b5341d5bb2e1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2016,6 +2025,10 @@ PrefabInstance:
       propertyPath: shootingRange
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 2957921338899173259, guid: 716ad2a7c747dac45932b5341d5bb2e1, type: 3}
+      propertyPath: _shootingPoint
+      value: 
+      objectReference: {fileID: 1559788762}
     - target: {fileID: 3288219195230293482, guid: 716ad2a7c747dac45932b5341d5bb2e1, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2236,7 +2249,7 @@ Transform:
   m_Children:
   - {fileID: 377891022}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1959144974
 GameObject:
@@ -2267,7 +2280,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5315468171396245792
 PrefabInstance:
@@ -2338,9 +2351,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 249113798}
     - target: {fileID: 2957921338899173259, guid: 716ad2a7c747dac45932b5341d5bb2e1, type: 3}
+      propertyPath: _bulletPrefab
+      value: 
+      objectReference: {fileID: 6167481124847259583, guid: c0c4d3df74ff3484cab4f8bb72504392, type: 3}
+    - target: {fileID: 2957921338899173259, guid: 716ad2a7c747dac45932b5341d5bb2e1, type: 3}
       propertyPath: shootingRange
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 2957921338899173259, guid: 716ad2a7c747dac45932b5341d5bb2e1, type: 3}
+      propertyPath: _shootingPoint
+      value: 
+      objectReference: {fileID: 249113798}
     - target: {fileID: 3288219195230293482, guid: 716ad2a7c747dac45932b5341d5bb2e1, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2428,7 +2449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5376815767074124214, guid: c0c4d3df74ff3484cab4f8bb72504392, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5376815767074124214, guid: c0c4d3df74ff3484cab4f8bb72504392, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2478,5 +2499,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4415348890927594795, guid: c0c4d3df74ff3484cab4f8bb72504392, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c0c4d3df74ff3484cab4f8bb72504392, type: 3}

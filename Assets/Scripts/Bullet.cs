@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private float _speed = 10f;
+    private float _speed = 50f;
     private Vector3 _direction;
-    private int _damage = 10;
+    private int _damage = 34;
 
     private void Update()
     {

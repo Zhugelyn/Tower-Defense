@@ -40,7 +40,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3288219195230293482}
-  - component: {fileID: -6088658616239721417}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -65,24 +64,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-6088658616239721417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3843226568520820461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed39f5e9e23768742bcbcb7db13c442c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootingPoint: {fileID: 6919268600108727293}
-  shootingRange: 14
-  shootingInterval: 1
-  bulletPrefab: {fileID: 6167481124847259583, guid: c0c4d3df74ff3484cab4f8bb72504392, type: 3}
-  enemyList:
-  - {fileID: 182862608747675236, guid: 1b6fcfe558612fa45a6aac9a6641d597, type: 3}
 --- !u!1 &6120707159619817555
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,8 +175,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed39f5e9e23768742bcbcb7db13c442c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingPoint: {fileID: 6919268600108727293}
-  shootingRange: 10
-  shootingInterval: 1
-  bulletPrefab: {fileID: 6167481124847259583, guid: c0c4d3df74ff3484cab4f8bb72504392, type: 3}
-  enemyList: []
+  _shootingPoint: {fileID: 0}
+  _bulletPrefab: {fileID: 6167481124847259583, guid: c0c4d3df74ff3484cab4f8bb72504392, type: 3}

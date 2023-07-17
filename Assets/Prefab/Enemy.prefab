@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b494284b3cec5c844b4947aa225240f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
+  _waypoints:
   - {fileID: 5315468171689443822, guid: 3108c5bd59118494983df9a944846f04, type: 3}
 --- !u!54 &5144537092394243846
 Rigidbody:
